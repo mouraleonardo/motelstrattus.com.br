@@ -13011,7 +13011,7 @@ a:active {
 }
 .price-suite{
   background-color: #F1F1F1;
-  padding: 30px 20px;
+  
   border-radius: 0.375rem;
   
   color: #1b1b1b;
@@ -13032,13 +13032,25 @@ table {
     display: block;
 }
 @media screen and (max-width: 992px) {
-  table {
-  width: 100%;
-}
 th, td {
   padding: 5px;
 }
-
+.form__padding {
+    padding: 10px 20px;
+}
+}
+@media screen and (min-width: 1401px) {
+.price-suite{
+  padding: 30px 20px;
+} 
+}
+@media screen and (max-width: 1400px) {
+table {
+  width: 100% !important;
+}
+.price-suite{
+  padding: 30px 10px;
+} 
 }
 @media screen and (max-width: 768px) {
   .room__amenity .group__row {
@@ -13066,9 +13078,12 @@ th {
 .obs{
   font-size: 12px;
 }
+@media screen and (min-width: 768px) {
 .single__offer__image,.single__offer__content{
   width: 50%;
 }
+}
+
 .offer__area.is__home__one {
     padding-bottom: 90px;
 }
@@ -13107,6 +13122,92 @@ form {
     filter: grayscale(85%);
     height: 450px;
     margin-bottom: -10px;
+}
+.saibamais{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--glida);
+  color: #ffffff;
+}
+.saibamais:hover {
+  opacity: 0.8;
+}
+.instagram{
+  width: 206.98px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.instagram:hover {
+  opacity: 0.8;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+}
+.waze-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #33ccff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.waze-button:hover {
+  opacity: 0.8;
+}
+
+/* Tooltip */
+.whatsapp-float .tooltip {
+  position: absolute;
+  bottom: 10px;
+  right: 55px;
+  background-color: #444;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 /*
 if you need custom styles, please add it in this file below
